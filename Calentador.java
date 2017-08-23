@@ -1,9 +1,11 @@
 public class Calentador{
     private int temperatura;
+    private int incremento;
     
     public Calentador()
     {
         temperatura=15;
+        incremento=3;
     }
     
     public int Calentar()
