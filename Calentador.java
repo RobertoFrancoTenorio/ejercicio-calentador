@@ -7,9 +7,14 @@ public class Calentador{
     public Calentador(int maximo, int minimo)
     {
         temperatura=15;
-        incremento=3;
+        incremento=0;
         max=maximo;
         min=minimo;
+    }
+    
+    public void modificaIncremento(int incre)
+    {
+        incremento=incre;
     }
     
     public int Calentar()
