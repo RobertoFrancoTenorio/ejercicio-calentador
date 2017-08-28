@@ -14,7 +14,14 @@ public class Calentador{
     
     public void modificaIncremento(int incre)
     {
-        incremento=incre;
+        if (incre>=max || incre<=min){
+            incremento=0;
+        }
+        if(incre<0){
+            incremento=0;
+        }   
+        else
+            incremento=incre;
     }
     
     public int Calentar()
