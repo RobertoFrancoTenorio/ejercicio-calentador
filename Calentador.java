@@ -12,6 +12,10 @@ public class Calentador{
         min=minimo;
     }
     
+    /**
+     * Metodo encargada de definir el incremento
+     * @param Recibe el incremento definido por el usuario
+     */
     public void modificaIncremento(int incre)
     {
         if (incre>=max || incre<=min){
@@ -24,6 +28,11 @@ public class Calentador{
             incremento=incre;
     }
     
+    /**
+     * Metodo que se encarga de elevar la temperatura   
+     * @return Nos muestra la temperatura final si pudo ser aumentada y 0 si 
+     * no pudo aumentarse
+     */
     public int Calentar()
     {
         if(temperatura<max){
@@ -44,6 +53,9 @@ public class Calentador{
             return(0);
     }
     
+    /**
+     * Nos brinda la informacion de la temperatura
+     */
     public void Chequeo()
     {
         System.out.println("La temperatura es: ");
